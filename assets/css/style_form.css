@@ -101,6 +101,17 @@ p.mt-2 {
         font-size: 18px;
     }
 
+p.mt-5 {
+    color: #ababab;
+}
+
+    p.mt-5 a {
+        color: #f97423;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
 .text-muted {
     color: #a4a4a4 !important;
 }
