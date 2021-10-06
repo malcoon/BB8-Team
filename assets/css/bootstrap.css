@@ -11199,7 +11199,8 @@ a.title{
 
 #companies {
   padding: 1px 0 0 0;
-  background-color: rgb(232, 232, 232, 0.2);
+  background-color: var(--bs-companies);
+  color: var(--bs-companies-text);
 }
 
 
@@ -11251,7 +11252,7 @@ a.title{
 
 .card.products:nth-child(1) {
   border: 1px solid #BE49E8;
-  background-color: #FEFCFE;
+  background-color: var(--bs-products);
 }
 
 .card.products:nth-child(1) h3 {
@@ -11260,7 +11261,7 @@ a.title{
 
   .card.products:nth-child(2) {
   border: 1px solid #5398E9;
-  background-color: #FAFCFF;
+  background-color: var(--bs-products);
 }
 
 .card.products:nth-child(2) h3 {
@@ -11269,8 +11270,8 @@ a.title{
 
   .card.products:nth-child(3) {
   border: 1px solid #2BBC5D;
-  background-color: #FAFFFC;
-}
+  background-color: var(--bs-products);
+  }
 
 .card.products:nth-child(3) h3 {
     color: #2BBC5D;
@@ -11301,6 +11302,7 @@ h3.soft {
 .description {
   position: relative;
   color: #7c7c7c;
+  font-size: 18px;
   max-width: 320px;
   line-height: 25px;
   top: 40px;
@@ -11309,8 +11311,8 @@ h3.soft {
 .card-testemunials {
   width: 400px;
   height: 270px;
-  border: 1px solid #FFA540;
-  background-color: #FFFCF8;
+  border: 1px solid var(--bs-testemunials-border);
+  background-color: var(--bs-testemunials);
   border-radius: 10px;
   margin: 20px 0;
 }
@@ -11328,6 +11330,7 @@ h3.soft {
 
 .card-testemunials .name {
   position: absolute;
+  color: var(--bs-testemunials-name);
   right: 30px;
   bottom: 20px;
   font-size: 24px;
@@ -11369,5 +11372,61 @@ p.footer-title {
 .copy {
   padding-top: 30px;
 }
+
+/* Dar-mode by: Tux(Porfiro) */
+
+:root{
+  --bs-white: white;
+  --btn-mode: white;
+  --btn-mode-color: #252728;
+  --btn-mode-hover: #383838;
+  --btn-mode-color-hover: white;
+  --bs-companies: rgba(232, 232, 232, 0.2);
+  --bs-companies-text: #515151;
+  --bs-products: white;
+  --bs-testemunials: #FFFCF8;
+  --bs-testemunials-border: #FFA540;
+  --bs-testemunials-name: #515151;
+}
+
+.dark-mode:root{
+  --bs-white: #2C2C2C;
+  --btn-mode: #181818;
+  --btn-mode-color: white;
+  --btn-mode-hover: white;
+  --btn-mode-color-hover: #181818;
+  --bs-companies-text: #c6c6c6;
+  --bs-testemunials-name: #c6c6c6;
+  --bs-companies: rgba(0, 0, 0, 0.2);
+  --bs-products: rgba(0, 0, 0, 0.2);
+  --bs-testemunials: rgba(0, 0, 0, 0.2);
+}
+
+body{
+  background-color: var(--bs-white);
+}
+
+.btn-mode {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--btn-mode);
+  color: var(--btn-mode-color);
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align:center;
+  text-decoration: none;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+  .btn-mode:hover{
+    background-color: var(--btn-mode-hover);
+    border-color: #2b2b2b;
+    color: var(--btn-mode-color-hover);
+    transition: .5s;
+  }
+
 
 /*# sourceMappingURL=style.css.map */
