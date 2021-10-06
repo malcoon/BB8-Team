@@ -11309,6 +11309,7 @@ h3.soft {
 
 .card-testemunials .description {
   width: 340px;
+  padding: 2px 20px;
   top: 0;
   font-size: 20px;
 }
