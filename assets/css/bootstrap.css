@@ -11236,6 +11236,19 @@ a.title{
   font-family: 'Nunito', sans-serif !important;
 }
 
+@media (max-width: 980px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 330px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif !important;
+  }
+}
+
 .card.products:nth-child(1) {
   border: 1px solid #BE49E8;
   background-color: #FEFCFE;
@@ -11288,7 +11301,7 @@ h3.soft {
 .description {
   position: relative;
   color: #7c7c7c;
-  width: 330px;
+  max-width: 320px;
   line-height: 25px;
   top: 40px;
 }
@@ -11308,8 +11321,7 @@ h3.soft {
 }
 
 .card-testemunials .description {
-  width: 340px;
-  padding: 2px 20px;
+  max-width: 320px;
   top: 0;
   font-size: 20px;
 }
