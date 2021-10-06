@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(../../images/BG.png) no-repeat center, url(../../images/Dots.png);
+  background-size: cover, 100%;
+  background-attachment: fixed, scroll;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-signin, .form-register {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.h3 {
+    color: #7c7c7c;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.checkbox {
+    text-align: left;
+    color: #ababab;
+}
+
+input::placeholder {
+    color: #ababab !important;
+}
+
+.form-signin .form-floating:focus-within, 
+.form-register .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"], .form-register input[type="email"] {
+  margin-bottom: -1px;
+}
+
+.form-signin input[type="password"], .form-register input[type="password"] {
+  margin-bottom: 10px;
+}
+
+.form-signin input[type="name"], .form-signin input[type="email"], .form-signin input[type="password"], .form-signin input[type="confirm"], 
+.form-register input[type="name"], .form-register input[type="email"], .form-register input[type="password"], .form-register input[type="confirm"] {
+        background-color: #f7f7f7;
+        border: none;
+        border: 4px;
+        padding: 14px;
+    }
+
+button.btn-primary {
+    background-color: #eb8323;
+    border: 1px solid #eb8323;
+}
+
+    button.btn-primary:hover {
+        background-color: #fa6921;
+        border: 1px solid #fa6921;
+    }
+
+.form-check-input[type=checkbox] {
+    cursor: pointer;
+}
+
+    .form-check-input:checked {
+        background-color: #eb8323;
+        border-color: #eb8323;
+        cursor: pointer;
+    }
+
+    .form-check-label {
+        color: #ababab;
+    }
+
+    .form-check a {
+        color: #f97423;
+        text-decoration: none;
+    }
+
+p.mt-5 {
+    color: #ababab;
+}
+
+    p.mt-5 a {
+        color: #f97423;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+.text-muted {
+    color: #a4a4a4 !important;
+}
+
+.alert {
+    position: absolute ;
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    animation: letsgo 1s both;
+    left: 15px;
+    color: #0f5132;
+    top: 1rem;
+    background-color: rgb(209, 231, 221, 0.6)
+}
+
+@keyframes letsgo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
