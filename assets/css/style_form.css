@@ -90,11 +90,11 @@ button.btn-primary {
         text-decoration: none;
     }
 
-p.mt-5 {
+p.mt-2 {
     color: #ababab;
 }
 
-    p.mt-5 a {
+    p.mt-2 a {
         color: #f97423;
         text-decoration: none;
         font-weight: 600;
