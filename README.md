@@ -1,3 +1,7 @@
 # Desafio BB8 Team 
 
-https://malcoon.github.io/bb8_team/
+### Desafio da Comunidade da Rafaella Ballerini
+
+[Comunidade da Rafa](https://discord.com/invite/wagxzStdcR)
+
+
